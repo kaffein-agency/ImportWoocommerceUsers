@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="idmkr" sortOrder="999" translate="label">
+			<label>idmkr</label>
+		</tab>
+		<section id="woocommerce_import" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>woocommerce_import</label>
+			<tab>idmkr</tab>
+			<resource>Idmkr_ImportWoocommerceUsers::config_idmkr_importwoocommerceusers</resource>
+			<group id="database" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>database</label>
+				<field id="host" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>host</label>
+					<comment/>
+				</field>
+				<field id="dbname" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>dbname</label>
+					<comment/>
+				</field>
+				<field id="username" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>username</label>
+					<comment/>
+				</field>
+				<field id="password" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="obscure">
+					<label>password</label>
+					<comment/>
+					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+					<config_path>woocommerce_import/database/password</config_path>
+				</field>
+				<field id="port" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>port</label>
+					<comment/>
+				</field>
+				<field id="table_prefix" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>table_prefix</label>
+					<comment/>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
