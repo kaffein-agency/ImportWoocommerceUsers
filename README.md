@@ -10,6 +10,7 @@ I used it for a magento 2.3 and a wordpress 5.2.2 import.
 ## How to install : 
 Copy code into app/code/Idmkr/ImportWoocommerceUsers/ folder of your magento.
 ```
+$ bin/magento module:enable Idmkr_ImportWoocommerceUsers
 $ bin/magento setup:upgrade
 $ bin/magento setup:di:compile
 $ bin/magento c:c && bin/magento c:f
