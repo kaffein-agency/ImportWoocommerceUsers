@@ -9,7 +9,7 @@
             "email": "florent@idmkr.io"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {},
     "autoload": {
         "files": [
